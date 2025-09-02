@@ -5,6 +5,7 @@ import Link from "next/link"
 import { SearchBar } from "./search"
 import {UserRound} from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "./themeTogle"
 
 import {
   NavigationMenu,
@@ -68,12 +69,12 @@ export default function NavBar() {
     < SearchBar />
 </div>
 <div className="flex flex-wrap items-center gap-2 md:flex-row">
-     
-      <Button><UserRound /></Button>
+     <ThemeToggle />
+      <Button><UserRound />1</Button>
    
-      <Button>Button</Button>
+      <Button>Invite member</Button>
 
-      <Button>Button</Button>
+      <Button>New project</Button>
     
     
 </div>
