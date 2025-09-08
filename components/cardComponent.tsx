@@ -10,7 +10,7 @@ export default function CardComponent() {
     <div className="p-4 relative">
      <h2>Untitled</h2>
      <p>viewed 1 min ago</p>
-     <div className="absolute bottom-7 right-2"><Badge variant="default">Free</Badge></div>
+     <div className="absolute bottom-7 right-2"><Badge variant="secondary">Free</Badge></div>
     </div>
     
     </div>

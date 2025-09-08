@@ -111,6 +111,22 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
+/* Emerald Theme */
+.theme-emerald {
+  --background: 151 81% 95%;
+  --foreground: 151 45% 15%;
+  --primary: 151 71% 40%;
+  --secondary: 151 50% 80%;
+}
+
+/* Purple Theme */
+.theme-purple {
+  --background: 270 100% 97%;
+  --foreground: 270 40% 20%;
+  --primary: 270 70% 50%;
+  --secondary: 270 50% 85%;
+}
+
 
 @layer base {
   * {

@@ -12,9 +12,10 @@ import Link from "next/link"
 
 
 
-import React from 'react'
+import React, { useState } from 'react'
 
 const DashboardDropdown = () => {
+  const [currentMenu,SetCurrentMenu]=useState("Last viewed by me")
   return (
 
    <div className=" w-full mb-6">
@@ -24,32 +25,32 @@ const DashboardDropdown = () => {
   <NavigationMenuList >
     <NavigationMenuItem>
       <NavigationMenuTrigger>
-        Last viewed by me
+        {currentMenu}
       </NavigationMenuTrigger>
       <NavigationMenuContent>
         <ul className="grid w-[300px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
                   <Link href="#">
-                    <div className="font-medium">Components</div>
-                    <div className="text-muted-foreground">
-                      Browse all components in the library.
+                    <div className="text-muted-foreground" onClick={()=>{SetCurrentMenu("Last viewed by me")}}>
+                      Last viewed by me
                     </div>
                   </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">
-                    <div className="font-medium">Documentation</div>
-                    <div className="text-muted-foreground">
-                      Learn how to use the library.
+                    
+                    <div className="text-muted-foreground" onClick={()=>{SetCurrentMenu("Last edited")}}>
+                    Last edited
                     </div>
                   </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
                   <Link href="#">
-                    <div className="font-medium">Blog</div>
-                    <div className="text-muted-foreground">
-                      Read our latest blog posts.
+                    
+                    <div className="text-muted-foreground" onClick={()=>{SetCurrentMenu("Alphabetically")}}>
+                      Alphabetically
+                      
                     </div>
                   </Link>
                 </NavigationMenuLink>

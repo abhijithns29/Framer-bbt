@@ -6,6 +6,7 @@ import { SearchBar } from "./search"
 import {UserRound} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "./themeTogle"
+import { Badge } from "./ui/badge"
 
 import {
   NavigationMenu,
@@ -35,9 +36,10 @@ export default function NavBar() {
               <li>
                 <NavigationMenuLink asChild>
                   <Link href="#">
-                    <div className="font-medium">Components</div>
+                    <div className="font-medium ">Workspaces</div>
                     <div className="text-muted-foreground">
-                      Browse all components in the library.
+                      My Workspace
+                      <Badge variant="secondary" className="ml-6">Free</Badge>
                     </div>
                   </Link>
                 </NavigationMenuLink>

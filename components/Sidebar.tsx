@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/sidebar"
 import { Separator } from "@/components/ui/separator"
 
-import { MessageSquareDot, Settings, User ,MessageCircle, Grid2x2X, Trash} from "lucide-react"
+import { MessageSquareDot, Settings, User ,MessageCircle, Grid2x2X, Trash, Plus} from "lucide-react"
 import Link from "next/link"
 
 export function AppSidebar() {
@@ -38,6 +38,9 @@ export function AppSidebar() {
         <SidebarGroup>
           
           <SidebarGroupContent>
+            <div className="font-bold mb-2" >
+                    projects
+                    </div>
             <Link href="/all" className="flex items-center gap-2 p-2 hover:bg-accent rounded-md">
               <Grid2x2X    className="h-4 w-4" /> All
             </Link>
@@ -46,7 +49,10 @@ export function AppSidebar() {
             <Link href="/archive" className="flex items-center gap-2 p-2 hover:bg-accent rounded-md">
               <Trash    className="h-4 w-4" /> Archive
             </Link>
-
+             
+                <Link href="/" className="flex items-center gap-2 p-2 hover:bg-accent rounded-md">
+               <Plus  className="h-4 w-4"/> New folder...
+            </Link>
 
           </SidebarGroupContent>
         </SidebarGroup>
